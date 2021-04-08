@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--styles-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Сайт портфолио веб-верстальщка и frontend разработчика</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- script-->
+
+<script type="text/javascript">
+    $(function(){
+    $('a[href^="#"]').click(function(){
+    var target = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+    return false;
+    });
+    });
+</script>
+<!--header-->
+<header class="header">
+    <div class="container">    
+        <div class="navbar">
+        <div class="navbar-links">
+        <div id="scroll">
+            <a href="#activity" class="navbar-links_items">Услуги</a>
+            <a href="#portfolio" class="navbar-links_items">Портфолио</a>
+            <a href="#price" class="navbar-links_items">Стоимость</a>
+        </div>
+        <!-- fast-scroll -->
+        </div>
+        <!-- /.navbar-links -->
+
+        <div class="navbar-contacts">
+            <a href="tel:+74999955577" class="navbar-contacts_phone">+7 (499) 995-55-77</a>
+            <button class="button navbar-button">Заказать звонок</button>
+        </div>
+        <!-- /.navbar-contacts -->
+
+        </div>
+        <!-- /.navbar -->
+
+       <div class="hero">
+           <div class="hero-main">
+               <h1 class="hero-header">Дмитрий Алексеев</h1>
+               <span class="hero-text gray-text">Frontend-разработчик и веб-верстальщик</span>
+               <button class="button-orange">Узнать больше</button>
+           </div>
+           <div class="hero-img"><img src="./img/human.png" alt="Дмитрий Алексеев"></div>
+       </div> 
+
+    <!-- /.hero --> 
+    </div>
+</header>
+
+<!-- section activity -->
+<section id="activity" class="activity">
+    <div class="container">
+        <h2 class="header-text">Что я делаю</h2>
+        <div class="activity-wrap">
+            <div class="activity-wrap_block">
+                <img src="./img/advantages/tools.png" alt="Иконка">
+                <p class="gray-text activity-text">Вёрстка лендинг–страниц и сайтов любой сложности</p>
+            </div>
+            <div class="activity-wrap_block">
+                <img src="./img/advantages/responsive.png" alt="Иконка">
+                <p class="gray-text activity-text">Адаптивная вёрстка под все браузеры и устройства</p>
+            </div>
+            <div class="activity-wrap_block">
+                <img src="./img/advantages/programming.png" alt="Иконка">
+                <p class="gray-text activity-text">Frontend–разработка и программирование</p>
+            </div>
+            <div class="activity-wrap_block">
+                <img src="./img/advantages/coding.png" alt="Иконка">
+                <p class="gray-text activity-text">Исправление и доработка существующей вёрстки</p>
+            </div>
+        </div>
+        <button class="button-orange btn-block">Узнать стоимость</button>
+    </div>
+</section>
+
+<!-- section portfolio-->
+
+<section id="portfolio" class="portfolio">
+<div class="container">
+    <h2 class="header-text">Примеры моих работ</h2>
+    <!-- header-text-->
+    <div class="portfolio-wrap">
+        <div class="portfolio-wrap-block">
+            <div class="portfolio-block-img">
+                <img src="./img/portfolio/1.png" alt="1 - работа">
+            </div>
+            <!-- /.portfolio-block-img -->
+            <p class="gray-text porfolio-text">Сайт магазина детской одежды</p>
+        </div>
+        <!-- /.work-wrap-block -->
+        <div class="portfolio-wrap-block">
+            <div class="portfolio-block-img">
+                <img src="./img/portfolio/2.png" alt="2 - работа">
+            </div>
+            <!-- /.portfolio-block-img -->
+            <p class="gray-text porfolio-text">Сайт психолога Веры Антоновой</p>
+        </div>
+        <!-- /.work-wrap-block -->
+        <div class="portfolio-wrap-block">
+            <div class="portfolio-block-img">
+                <img src="./img/portfolio/3.png" alt="3 - работа">
+            </div>
+            <!-- /.portfolio-block-img -->
+            <p class="gray-text porfolio-text">Сайт магазина «Рыболов»</p>
+        </div>
+        <!-- /.work-wrap-block -->
+        
+    </div>
+    <button class="button-orange btn-block">Заказать проект</button>
+    <!-- /.work-wrap -->
+</div>
+<!-- /.container -->
+</section>
+
+<!-- section price -->
+
+<section id="price" class="price">
+<div class="container">
+    <div class="price-text">
+        <h3 class="header-price">
+            Адаптивная вёрстка под все устройства
+            и браузеры от 1000 рублей всего за 4 часа.*
+        </h3>
+        <!-- section price -->
+        <p class="price-description">
+            * Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально,
+            в зависимости от сложности задач.
+        </p>
+    </div>
+    <!-- price text -->
+</div>
+</section>
+<!-- footer -->
+
+<footer class="footer">
+<div class="container">
+    <div class="footer-wrap">
+        <div class="footer-menu">
+            <div id="scroll">
+                <a class="footer-menu-link" href="#activity">Услуги</a>
+                <a class="footer-menu-link" href="#portfolio">Портфолио</a>
+                <a class="footer-menu-link" href="#price">Стоимость</a>
+            </div>
+        <!-- fast-scroll -->    
+        </div>
+        <!-- /.footer-menu -->
+        <div class="footer-contacts">
+            <a href="tel:+74999955577" class="footer-contactc-block">
+                <img src="./img/logo/phone.png" alt="phone">
+                <p>+7 (499) 995-55-77</p>
+            </a>
+            <a href="mailto:dmitry@alekseev.com" class="footer-contactc-block">
+                <img src="./img/logo/mail.png" alt="mail">
+                <p>dmitry@alekseev.com</p>
+            </a>
+        </div>
+        <!-- /.footer-contacts -->
+        <div class="footer-social">
+            <button class="button">Заказать звонок</button>
+            <div class="footer-social-wrap">
+                <a href="#" class="footer-social-wrap-links">
+                    <img src="./img/logo/vk.png" alt="vk">
+                </a>
+                <!-- /.footer-social-wrap-links -->
+                <a href="#" class="footer-social-wrap-links">
+                    <img src="./img/logo/facebook.png" alt="facebook">
+                </a>
+                <!-- /.footer-social-wrap-links -->
+                <a href="#" class="footer-social-wrap-links">
+                    <img src="./img/logo/twitter.png" alt="twitter">
+                </a>
+                <!-- /.footer-social-wrap-links -->
+                <a href="#" class="footer-social-wrap-links">
+                    <img src="./img/logo/instagram.png" alt="instagram">
+                </a>
+                <!-- /.footer-social-wrap-links -->
+            </div>
+            <!-- /.footer-social-wrap -->
+        </div>
+        <!-- /.footer-social -->    
+    </div>
+    <!-- /.footer-wrap -->
+</div>
+<!-- /.container -->
+</footer>
+<!-- /.copyright -->
+<div class="copyright">
+    <h4 class="copyright-text">© Дмитрий Алексеев, 2016 – 2018</h4>
+</div>
+
+
+
+
+</body>
+</html>
